@@ -42,6 +42,7 @@ class InsertUsers extends Command
         // $this->description = $product->description;
         // $this->quantity = $product->quantity;
         // $this->price = $product->price;
+
         Product::create([
             'name'=>'nombre comand',
             'description'=>'description comand',
@@ -49,7 +50,7 @@ class InsertUsers extends Command
             'price'=>100
         ]);
 
-        $this->info('Insertado correctamente');
+        $this->info('Insertado correctamente, exitoso');
 
         return 0;
     }
